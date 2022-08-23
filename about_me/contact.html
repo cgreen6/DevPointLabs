@@ -1,0 +1,100 @@
+<html>
+  <body>
+		<style>
+      body {
+        background-image: url("https://images.alphacoders.com/265/thumb-1920-265693.png");
+        background-size: 100%;
+        background-repeat:repeat;
+    
+      } </style>
+		
+    <h1>Contact me</h1>
+    Email: hoolio.suarez@gmail.com <br> or send a message below:
+    <br>
+    <br>
+    <br>
+    <form action="process.php" method="POST">
+			<div>
+			<label>First Name</label>
+			<input style="background-color:palevioletred;" type="text" name="first-name" placeholder="Enter first name">
+		</div>
+		<br>
+		<div>
+			<label>Last Name</label>
+			<input style="background-color:palevioletred;" type="text" name="last-name" placeholder="Enter last name">
+		</div>
+		<br>
+		<div>
+			<label>Email - - --</label>
+			<input style="background-color:palevioletred;" type="email" name="email " placeholder="Enter email">
+		</div>
+		<br>
+		<div>
+			<label>Message - -</label>
+			<textarea style="background-color:palevioletred;" name="message" placeholder="optional"></textarea>
+		</div>
+		<br>
+		<div>
+			<label>Gender - - -</label>
+			<select style="background-color:palevioletred;" name="gender">
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
+		<br>
+		<div>
+		<label>Age: - - - - -</label>
+			<input style="background-color:palevioletred;" type="number" name="age" value="30">
+		</div>
+		<br>
+		<div>
+			<label>Date of Birth</label>
+			<input style="background-color:palevioletred;" type="date" name="birthday">
+		</div>
+		<br>
+    <fieldset>
+      <legend>Choose an animal</legend>
+      <input type="radio" name="animal" value="dog" checked />Dog
+      <input type="radio" name="animal" value="cat" checked />Cat
+      <input type="radio" name="animal" value="goat" checked />Goat<br>
+      <input type="radio" name="animal" value="lizard" checked />Lizard
+      <input type="radio" name="animal" value="parot" checked />Parot
+      <input type="radio" name="animal" value="Fish" checked />Fish
+
+    </fieldset>
+<br>
+		<input type="submit" name="submit" value="Submit"> <input type="reset" />
+    
+    <br>
+
+  <a href="./index.html">Home</a>
+  <a href="./about.html">About</a>
+
+	<style>
+		a:link {
+			color: green;
+			background-color: transparent;
+			text-decoration: none;
+		}
+		
+		a:visited {
+			color: pink;
+			background-color: transparent;
+			text-decoration: none;
+		}
+		
+		a:hover {
+			color: red;
+			background-color: transparent;
+			text-decoration: underline;
+		}
+		
+		a:active {
+			color: yellow;
+			background-color: transparent;
+			text-decoration: underline;
+		}
+		</style>
+  </body>
+</html>

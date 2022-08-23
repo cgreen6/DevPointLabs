@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+}
+
+#top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: #626060;
+}
