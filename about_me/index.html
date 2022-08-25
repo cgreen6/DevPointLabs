@@ -8,8 +8,6 @@
         background-image: url("https://i.pinimg.com/originals/23/79/76/237976db7a8cb35af645830b6718e4ef.jpg");
         background-size: 100%;
         background-repeat:repeat;
-      
-
       } </style>
   </head>
   <body>
@@ -27,7 +25,177 @@
 
     <h1 id="top">Welcome To My Page</h1>
 
-    .....
+    <h1>Hello! </h1>
+    <p>My name is Christian Green. I am 35 years old and from Utah. My wifes name is Heather and she is from San Diego CA area. We have the cutest
+      little daughter Layla who is turning 2 in October. I also have a son named James that was just born.</p>
+  </section>
+  <section>
+   <!-- Laylas pic was here -->
+  </section>
+
+  <style>
+    a:link {
+      color: green;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    
+    a:visited {
+      color: pink;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    
+    a:active {
+      color: yellow;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    <body>
+<style>
+  html {
+    box-sizing: border-box;
+    background: #ffc600;
+    font-family: 'helvetica neue';
+    font-size: 20px;
+    font-weight: 200;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .panels {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+  }
+
+  .panel {
+    background: #6B0F9C;
+    box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
+    color: white;
+    text-align: center;
+    align-items: center;
+    /* Safari transitionend event.propertyName === flex */
+    /* Chrome + FF transitionend event.propertyName === flex-grow */
+    transition:
+      font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+      flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+      background 0.2s;
+    font-size: 20px;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .panel1 { background-image:url(images/Wedding.jpeg); }
+  .panel2 { background-image:url(images/Arches.jpeg); }
+  .panel3 { background-image:url(images/layla.jpg); }
+  .panel4 { background-image:url(images/NewHome.jpeg); }
+  .panel5 { background-image:url(images/LittleOnes.jpg); }
+
+  /* Flex Items */
+  .panel > * {
+    margin: 0;
+    width: 100%;
+    transition: transform 0.5s;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .panel > *:first-child { transform: translateY(-100%); }
+  .panel.open-active > *:first-child { transform: translateY(0); }
+  .panel > *:last-child { transform: translateY(100%); }
+  .panel.open-active > *:last-child { transform: translateY(0); }
+
+  .panel p {
+    text-transform:none;
+    font-family: 'Amatic SC';
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+    font-size: 2em;
+  }
+  
+  .panel p:nth-child(2) {
+    font-size: 4em;
+  }
+
+  .panel.open {
+    flex: 5;
+    font-size: 40px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .panel p {
+      font-size: 1em;
+    }
+  }
+</style>
+
+
+<div class="panels">
+  <div class="panel panel1">
+    <p></p>
+    <p>&#x1F33B</p>
+    <p></p>
+  </div>
+  <div class="panel panel2">
+    <p></p>
+    <p>My</p>
+    <p></p>
+  </div>
+  <div class="panel panel3">
+    <p></p>
+    <p>little</p>
+    <p></p>
+  </div>
+  <div class="panel panel4">
+    <p></p>
+    <p>family</p>
+    <p></p>
+  </div>
+  <div class="panel panel5">
+    <p></p>
+    <p>&#x1F33B</p>
+    <p></p>
+  </div>
+</div>
+
+<script>
+  const panels = document.querySelectorAll('.panel');
+
+  function toggleOpen() {
+    console.log('Hello');
+    this.classList.toggle('open');
+  }
+
+  function toggleActive(e) {
+    console.log(e.propertyName);
+    if (e.propertyName.includes('flex')) {
+      this.classList.toggle('open-active');
+    }
+  }
+
+  panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+  panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+</script>
+
+
 
     
     <p>My Interests</p>
@@ -39,74 +207,8 @@
       <li>Science</li>
       <li>MTG</li>
     </ul>
-    <table>
-      <caption>Browser Compatability</caption>
-      <thead>
-        <tr>
-          <th>Feature</th>
-          <th>Chrome</th>
-          <th>Firefox</th>
-          <th>Safari</th>
-        <tr>
-      </thead>
-    
-      <tbody>
-        <tr>
-          <td>Feature 1</td>
-          <td>✓</td>
-          <td>X</td>
-          <td>X</td>
-        </tr>
-        <tr>
-          <td>Feature 2</td>
-          <td>✓</td>
-          <td>✓</td>
-          <td>✓</td>
-        </tr>
-        <tr>
-          <td>Feature 3</td>
-          <td>X</td>
-          <td>X</td>
-          <td>✓</td>
-        </tr>
-      </tbody>
-    </table>
-    <a href="#links">Table Of Contents</a>
    
-    <h3 id="images">Interests listed as images</h3>
-    .....
-    <br>
-
-
-<!-- image slider below  -->
-
-<h1>Interest Slider</h1>
-<div class="slide-container">
-<div class="slide fade">
-<img src="images/ibanez-xpt700.jpeg"  alt='' height="640" width="420">
-</div>
-<div class="slide fade">
-<img src="images/skate1.jpg" alt='' height="640" width="420">
-</div>
-<div class="slide fade">
-<img src="images/skate2.jpg" alt='' height="640" width="420">
-</div>
-<div class="slide fade">
-<img src="images/JWST.png" alt='' height="640" width="420">
-</div>
-<a href="#" class="prev" title="Previous">&#10094</a>
-<a href="#" class="next" title="Next">&#10095</a>
-</div>
-<div class="dots-container">
-<span class="dot"></span>
-<span class="dot"></span>
-<span class="dot"></span>
-<span class="dot"></span>
-</div>
-
 <a href="#top">Go To Top</a>
-<a href="#images">Images</a>
-
 ....
 <a target="_blank" href="https://www.google.com/imghp">Google Search</a>
 
